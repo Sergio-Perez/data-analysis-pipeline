@@ -5,8 +5,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 import argparse
-from funciones import buscarAlbum
-from funciones import descargar
+from cargarybuscar import buscarAlbum
+from cargarybuscar import descargar
 from funciones import argParse
 
 #Cargo el dataframe limpio
@@ -43,17 +43,15 @@ print(df)
 
 df_group = df.groupby(['title', 'dur']).count()[["country"]]
 print(df_group)
-#df_group["cantidad"] = df.groupby(["title","dur"].values_count()
-#print (f"Groupby por titulo y duración \n {df_group}")
-df.dur.describe()
+
+
+print(df.dur.describe())
 
 #Creamos un DataFrame de estadisticas y hacemos un describe 
 #con respecto a la duracion
 
-#estadist = pd.DataFrame(estadisticas)
-#print(estadist)
-#print(f"Mostramos las estadisticas de la duración de la tabla del groupby {estadist}")
 
 df.to_csv('./csv/terminado.csv')
+
 #Uso argaparse
 argParse("./csv/terminado.csv")
