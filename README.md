@@ -1,6 +1,6 @@
 ##Proyecto Data Analisys Pipiline:
 
-!./imagenes/Musica.jpeg
+![](./imagenes/Musica.jpeg)
 
 
 En este proyecto vamos a un csv de musica.
