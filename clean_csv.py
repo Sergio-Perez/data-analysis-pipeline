@@ -1,7 +1,7 @@
 import pandas as pd
 
 #Cargamos el csv
-df = pd.read_csv('./csv/top-50-spotify-songs-by-each-country/top50contry.csv',encoding="latin1'")
+df = pd.read_csv('./Output/top-50-spotify-songs-by-each-country/top50contry.csv',encoding="latin1'")
 df.head()
 
 #Miramos las columnas del csv 
@@ -36,13 +36,13 @@ df_clean
 #Miro los valores de title
 list(df_clean.title)
 
-#Elimino todos los nombre iligico con "<u+05" etc..
+#Elimino todos los nombre ilógico con "<u+05" etc..
 df_clean.drop(df_clean[df_clean.title.str.contains("<U+")].index, inplace=True)  
 df_clean.title
 
 print((df_clean.title.loc[124]).isdigit())
 
-#Elimino los titulos incoherentes o numericon sin sentido.
+#Elimino los titulos incoherentes o numericos sin sentido.
 df_clean.title2= df_clean["title"].str.replace(".", "") 
 df_clean.drop(df_clean[df_clean.title2.str.isdigit() == True].index, inplace=True)
 df_clean.drop(df_clean[df_clean.title.str.len() == 1].index, inplace=True)

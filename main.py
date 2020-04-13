@@ -7,10 +7,10 @@ load_dotenv()
 import argparse
 from cargarybuscar import buscarAlbum
 from cargarybuscar import descargar
-from funciones import argParse
+from argaparse import argParse
 
 #Cargo el dataframe limpio
-df = pd.read_csv('./csv/clean.csv')
+df = pd.read_csv('./Output/clean.csv')
 
 #Aqui uso la api de Deezer primero saco el token
 
@@ -51,7 +51,7 @@ print(df.dur.describe())
 #con respecto a la duracion
 
 
-df.to_csv('./csv/terminado.csv')
+df.to_csv('./Output/terminado.csv')
 
 #Uso argaparse
-argParse("./csv/terminado.csv")
+argParse("./Output/terminado.csv")
