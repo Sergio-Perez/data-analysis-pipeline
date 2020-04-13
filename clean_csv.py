@@ -55,6 +55,6 @@ df_clean.drop(df_clean[df_clean.val.isnull()].index, inplace=True)
 df_clean.val = df_clean.val.astype(int)
 
 #Copio la tabla a un csv
-df_clean.to_csv('./csv/clean.csv')
+df_clean.to_csv('./Input/clean.csv')
  
 print(df_clean)

@@ -2,7 +2,6 @@ import requests
 import json
 import pandas as pd
 import os
-
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -27,7 +26,7 @@ def descargar(df):
         artista = row.artist
         artists_url = f"https://api.deezer.com/search?q=artist:'{artista}' track:'{titulo}'"
         artists_response = requests.get(artists_url)
-        album =artists_response.json()
+        album = artists_response.json()
         try:
             albunes.append(buscarAlbum(album))
         except:
