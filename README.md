@@ -1,4 +1,4 @@
-##Proyecto Data Analisys Pipiline:
+# Proyecto Data Analisys Pipiline:
 
 ![](./imagenes/Musica.jpeg)
 
@@ -6,7 +6,7 @@
 En este proyecto vamos a analizar un csv de musica.
 
 
-#Limpiamos el csv:
+## Limpiamos el csv:
 
 
 Seleccionamos el csv llamado top50contry.csv.
@@ -22,7 +22,7 @@ Guardo mi csv limpio en la carpeta csv como clean.csv.
 
 
 
-#Usaremos la Api de Deezer:
+## Usaremos la Api de Deezer:
 
 Añadiremos desde la Api de Deezer la columna Albums que tendrá dentro el álbum de la canción con respecto al cantante.
 Para ello sacaremos el token y después de identificarnos empezaremos a buscar los álbumes.
@@ -31,12 +31,12 @@ Ya que tengo la prueba de que funcionan mis funciones lo automatizo con las func
 
 Ahora que tenemos el data-frame miramos si tiene nulos en la nueva columna y los eliminamos.
 
-#Reporte visual.
+## Reporte visual.
 
 Imprimimos por pantalla un informe con los títulos la duración y la cantidad de veces que se ha repetido esa canción, lo que indica en que países fueron top esas canciones.
 Imprimimos por pantalla un informe de los mínimos, máximos, etc… de la columna “dur”, que indica la duración de las canciones.
 
-#Utilidad desde termina.
+## Utilidad desde termina.
 
 Por último guardo el dataframe en la carpeta de csv llamándolo “terminado”.
 Ejecuto la función “argParse” desde la carpeta funciones.py, lo que nos hace que tengamos varios parámetros con los que podremos filtrar el csv desde el terminal.
