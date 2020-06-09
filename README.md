@@ -3,7 +3,7 @@
 ![](./imagenes/Musica.jpeg)
 
 
-En este proyecto vamos a analizar un csv de musica.
+En este proyecto vamos a analizar un csv de música.
 
 
 ## Limpiamos el csv:
